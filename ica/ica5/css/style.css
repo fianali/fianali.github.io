@@ -42,10 +42,11 @@ h1 {
 
 article {
   background-color: white;
-  background: url(../img/top-image.png), url(../img/bottom-image.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/top-image.png), url(../img/bottom-image.png), linear-gradient(rgba(0, 0, 0, .5), white, white, rgba(0, 0, 0, .5));
+  background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
-  background-image: linear-gradient()
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid greenyellow;
 }
 
 h1 {
