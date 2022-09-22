@@ -1,0 +1,120 @@
+body {
+    background: #F5F5F5;
+}
+
+h1 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #505050;
+
+}
+
+h2 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+    color: #505050;
+}
+
+h3 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #505050;
+}
+
+h4 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #505050;
+}
+
+h5 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #505050;
+}
+
+h6 {
+    font-family: 'Gideon Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #505050;
+}
+
+p {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #505050;
+}
+
+ol {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #7E8389;
+}
+
+ul {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #7E8389;
+}
+
+hr {
+    border: 1px solid #BF9990;
+}
+
+a:link {
+    color: #BF9990;
+}
+
+/* mouse over link */
+a:hover {
+    color: #F2CDC4;
+}
+
+/* visited link */
+a:visited {
+    color: #E7DECB;
+}
