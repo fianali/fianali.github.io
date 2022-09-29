@@ -131,8 +131,11 @@ nav a {
     align-items: center;
 }
 
-.flex-container>contents {
-    font-size: 300px;
+@media (max-width: 1900px) {
+
+    .flex-container {
+        flex-flow: row wrap;
+    }
 }
 
 @media (max-width: 600px) {
