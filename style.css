@@ -2,15 +2,17 @@ body {
     background: #F5F5F5;
 }
 
+
+.name {
+    margin: auto;
+}
+
 h1 {
     font-family: 'Gideon Roman';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
-    /* identical to box height */
-
-
     color: #505050;
 
 }
@@ -21,9 +23,6 @@ h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-    /* identical to box height */
-
-
     color: #505050;
 }
 
@@ -33,7 +32,6 @@ h3 {
     font-weight: 400;
     font-size: 36px;
     line-height: 43px;
-
     color: #505050;
 }
 
@@ -43,7 +41,6 @@ h4 {
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
-
     color: #505050;
 }
 
@@ -53,9 +50,6 @@ h5 {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    /* identical to box height */
-
-
     color: #505050;
 }
 
@@ -65,9 +59,6 @@ h6 {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
-
-
     color: #505050;
 }
 
@@ -77,7 +68,6 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-
     color: #505050;
 }
 
@@ -87,17 +77,16 @@ ol {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-
     color: #7E8389;
 }
 
 ul {
+    list-style: none;
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-
     color: #7E8389;
 }
 
@@ -117,4 +106,38 @@ a:hover {
 /* visited link */
 a:visited {
     color: #E7DECB;
+}
+
+nav {
+    background-color: #BF9990;
+    padding: .25em;
+    position: sticky;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container>contents {
+    font-size: 300px;
+}
+
+@media (max-width: 600px) {
+
+    .flex-container {
+        flex-flow: column;
+    }
 }
