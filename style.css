@@ -134,7 +134,7 @@ nav a {
 @media (max-width: 1900px) {
 
     .flex-container {
-        flex-flow: row wrap;
+        flex-flow: row;
     }
 }
 
