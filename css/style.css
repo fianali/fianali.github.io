@@ -71,6 +71,7 @@ p {
     color: #505050;
 }
 
+
 ol {
     font-family: 'PT Serif';
     font-style: normal;
@@ -98,56 +99,116 @@ a:link {
     color: #BF9990;
 }
 
-/* mouse over link */
 a:hover {
     color: #F2CDC4;
 }
 
-/* visited link */
 a:visited {
     color: #E7DECB;
 }
 
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#logo {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 80px;
+    color: #505050;
+    text-align: center;
+    background: #F5F5F5;
+}
+
 nav {
-    background-color: #BF9990;
-    padding: .25em;
-    position: sticky;
-}
-
-nav ul {
-    margin: 0;
     display: flex;
-    flex-flow: row;
+    background-color: #BF9990;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-nav a {
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links a {
+    color: #E7DECB;
     text-decoration: none;
 }
+
+.nav_links a:hover {
+    color: #F2CDC4;
+}
+
+#headshot {
+    float: left;
+    padding: 10px 30px;
+}
+
+#aboutMePicture {
+    padding: 0px 40px;
+    float: left;
+}
+
+#aboutMeDescription {
+    padding: 0px 5rem;
+}
+
+#resume {
+    text-align: center;
+    padding-top: 200px;
+}
+
 
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 3em;
+    padding: 200px 50px;
 }
 
-@media (max-width: 1900px) {
+.flex-container2 {
+    display: flex;
+    align-items: center;
+    padding: 200px 30px;
+}
+
+
+@media screen and (max-width: 1900px) {
 
     .flex-container {
-        flex-flow: row;
+        flex-flow: row wrap;
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .flex-container {
         flex-flow: column;
     }
 
-    nav ul {
+    .flex-container2 {
         flex-flow: column;
     }
+
+    #resume {
+        width: 100%;
+    }
+
+    .nav_links a {
+        font-size: 15px;
+    }
+
 
 }
