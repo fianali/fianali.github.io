@@ -2,11 +2,6 @@ body {
     background: #F5F5F5;
 }
 
-
-.name {
-    margin: auto;
-}
-
 h1 {
     font-family: 'Gideon Roman';
     font-style: normal;
@@ -155,9 +150,36 @@ nav {
     padding: 10px 30px;
 }
 
+
+#gameDevProjects {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #505050;
+    text-align: center;
+    padding: 0px 50px;
+    width: 100%;
+}
+
+#musicProjects {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #505050;
+    text-align: center;
+    padding: 0px 50px;
+    width: 100%;
+}
+
 #aboutMePicture {
-    padding: 0px 40px;
     float: left;
+}
+
+#gamingPicture {
+    padding: 0px 50px;
+    float: right;
 }
 
 #aboutMeDescription {
@@ -170,7 +192,7 @@ nav {
 }
 
 
-.flex-container {
+.indexContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -178,7 +200,14 @@ nav {
     padding: 200px 50px;
 }
 
-.flex-container2 {
+.projectsContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 200px 30px;
+}
+
+.aboutMeContainer {
     display: flex;
     align-items: center;
     padding: 200px 30px;
@@ -187,18 +216,18 @@ nav {
 
 @media screen and (max-width: 1900px) {
 
-    .flex-container {
+    .indexContainer {
         flex-flow: row wrap;
     }
 }
 
 @media screen and (max-width: 600px) {
 
-    .flex-container {
+    .indexContainer {
         flex-flow: column;
     }
 
-    .flex-container2 {
+    .aboutMeContainer {
         flex-flow: column;
     }
 
