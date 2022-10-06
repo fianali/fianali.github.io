@@ -86,6 +86,11 @@ ul {
     color: #7E8389;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 hr {
     border: 1px solid #BF9990;
 }
@@ -101,6 +106,7 @@ a:hover {
 a:visited {
     color: #E7DECB;
 }
+
 
 
 header {
@@ -162,6 +168,15 @@ nav {
     width: 100%;
 }
 
+#unity {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #musicProjects {
     font-family: 'PT Serif';
     font-style: normal;
@@ -175,6 +190,7 @@ nav {
 
 #aboutMePicture {
     float: left;
+    width: 100%;
 }
 
 #gamingPicture {
@@ -228,6 +244,10 @@ nav {
     }
 
     .aboutMeContainer {
+        flex-flow: column;
+    }
+
+    #unity {
         flex-flow: column;
     }
 
