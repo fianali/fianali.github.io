@@ -149,13 +149,24 @@ nav {
     color: #F2CDC4;
 }
 
+#introduction {
+    display: flex;
+    flex-flow: row;
+}
+
 #headshot {
+    width: 100%;
     float: left;
     padding: 5px;
 }
 
 #description {
-    padding: 30px;
+    padding: 0px 50px;
+}
+
+#cello {
+    float: right;
+    padding-top: 30px;
 }
 
 #designProjects {
@@ -216,7 +227,9 @@ nav {
 }
 
 #resume {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding-top: 200px;
 }
 
@@ -244,12 +257,17 @@ nav {
 
 @media screen and (max-width: 1900px) {
 
+
     .indexContainer {
         flex-flow: row wrap;
     }
 }
 
 @media screen and (max-width: 600px) {
+
+    #introduction {
+        flex-flow: column;
+    }
 
     .indexContainer {
         flex-flow: column;
@@ -268,8 +286,13 @@ nav {
     }
 
     #resume {
-        width: 100%;
+        width: auto;
+        height: auto;
     }
+
+    /* #gamingPicture {
+        width: 100%;
+    } */
 
     .nav_links a {
         font-size: 15px;
