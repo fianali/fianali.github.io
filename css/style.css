@@ -151,7 +151,6 @@ nav {
 
 #introduction {
     display: flex;
-    flex-flow: row;
 }
 
 #headshot {
