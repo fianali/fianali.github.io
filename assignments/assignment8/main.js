@@ -7,12 +7,11 @@ function randomValueFromArray(array) {
     return array[random];
 }
 
-// "The sun's out, it's 94 fahrenheit outside, and the birds are chirping. : insertx: went to the :inserty: to acclimate to the heat, but something went wrong and then he : insertz:. As this was happening, Bob was riding his bike and got a glimpse of everything. Although : insertx: weighed 300 pounds, that shouldn't have happened"
 
-var storyText = "The sun's out, it's 94 fahrenheit outside, and the birds are chirping. : insertx: went to the :inserty: to acclimate to the heat, but something went wrong and then he : insertz:. As this was happening, Bob was riding his bike and got a glimpse of everything. Although : insertx: weighed 300 pounds, that shouldn't have happened."
-const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-const insertY = ["the soup kitchen", "Disneyland", "the White House"];
-const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+var storyText = "As the days get hotter and hotter, reaching a high of 94 fahrenheit, : insertx: tries to cool down by buying a cold drink from the local :inserty:. : insertx: found her favorite drink, so she celebrates by : insertz:! Bob sees her celebrating and runs to join her, but a 300 pound bodybuilder gets in their way :(";
+const insertX = ["Rapunzel", "Mulan", "Ariel"];
+const insertY = ["convenience store", "street-food stand", "Disneyland merch store"];
+const insertZ = ["running into the prince's arms", "dancing with her pet accomplice", "singing her heart out"];
 
 randomize.addEventListener('click', result);
 
@@ -38,7 +37,7 @@ function result() {
         const temperature = Math.round((94 - 32) * (5 / 9));
         const weight = Math.round(300 / 14);
 
-        newStory = newStory.replace("300 pounds", weight + ' stones');
+        newStory = newStory.replace("300 pound", weight + ' stone');
         newStory = newStory.replace("94 fahrenheit", temperature + ' centigrade');
 
     }
