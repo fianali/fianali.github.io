@@ -1,0 +1,55 @@
+h1 {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #505050;
+  text-align: center;
+
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  background: #F5F5F5;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+  border: 3px solid #BF9990;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  border: 0;
+  font-family: 'PT Serif';
+  color: #505050;
+  background: #BF9990;
+  text-shadow: 1px 1px 1px #E7DECB;
+  border: 1px solid #7E8389;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 19.68%;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #BF9990;
+
+}
