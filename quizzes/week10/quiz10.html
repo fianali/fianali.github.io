@@ -43,7 +43,26 @@
     let total = 0;
     let male = 0;
 
-    let cats = JSON.parse(catString);
+    const cats = JSON.parse(catString);
+
+    for (let i = 0; i < cats.length; i++) {
+      for (const kitten of cats[i].kittens) {
+        total++;
+        if (kitten.gender === 'm') {
+          male++;
+        }
+      }
+
+      //put commas between the cats names, and if its the last one put a period
+      if (i < (cats.length - 1)) {
+        motherInfo += `${cats[i].name}, `;
+      }
+      else {
+        motherInfo += `and ${cats[i].name}.`;
+      }
+    }
+
+    kittenInfo = `There are ${total} kittens in total, ${male} males and ${total - male} females.`;
 
     //my attempt
     // let i = 0;
@@ -63,7 +82,7 @@
 
     // Don't edit the code below here!
 
-    para1.textContent = motherInfo + 'pls inspect my code idk how to do it';
+    para1.textContent = motherInfo;
     para2.textContent = kittenInfo;
   }
 
