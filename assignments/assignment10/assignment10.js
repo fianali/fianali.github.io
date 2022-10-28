@@ -1,19 +1,50 @@
 //q1 and q2
-fetch('assignment10.json')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+var companyData =
+{
+    "companyName": "Tech Stars",
+    "website": "www.techstars.site",
+    "employees": [
+        {
+            "first name": "Sam",
+            "department": "Tech",
+            "designation": "Manager",
+            "salary": "40000",
+            "raise eligible": "true"
+        },
+        {
+            "first name": "Mary",
+            "department": "Finance",
+            "designation": "Trainee",
+            "salary": "18500",
+            "raise eligible": "true"
+        },
+        {
+            "first name": "Bill",
+            "department": "HR",
+            "designation": "Executive",
+            "salary": "21200",
+            "raise eligible": "false"
+        }
+    ]
+};
 
-const json
-
-
+console.log(companyData);
 
 //q3
-function addEmployee(employeeString) {
-    const employees = JSON.parse(employeeString);
+const newEmployee = {
+    "first name": "Anna",
+    "department": "Tech",
+    "designation": "Executive",
+    "salary": "25600",
+    "raise eligible": "false"
+};
 
-    //go to the end of the employee array
-    for (let i = employees.length; i < 5; i++) {
-        var newEmployee;
-    }
+companyData['employees'].push(newEmployee);
+console.log(companyData);
 
+//q4
+let totalSalary = 'the total salary is $';
+for (let i = 0; i < companyData.length; i++) {
+    console.log("hello" + i);
 }
+// console.log(totalSalary);
