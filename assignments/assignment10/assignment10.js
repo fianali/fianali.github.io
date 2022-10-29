@@ -78,3 +78,5 @@ for (let i = 0; i < employee.length; i++) {
 
     console.log(employee[i]["first name"] + "'s work from home status is " + employee[i].wfh);
 }
+
+console.log(companyData);
