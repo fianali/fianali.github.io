@@ -1,7 +1,7 @@
 const quoteButton = document.querySelector('.new-quote');
 quoteButton.addEventListener('click', getQuote);
 
-const likeButton = document.querySelector('.twitter');
+const likeButton = document.querySelector('.like');
 likeButton.addEventListener('click', changeNumLikes);
 let numLikes = 0;
 
