@@ -94,12 +94,12 @@ header {
 }
 
 .new-quote {
-    background-color: #4A2B0F;
+    background-color: #505050;
     margin-bottom: 15px;
 }
 
 .new-quote:hover {
-    background-color: #6d3b0e;
+    background-color: #7E8389;
 }
 
 .new-quote:disabled {

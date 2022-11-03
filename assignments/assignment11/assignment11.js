@@ -30,6 +30,7 @@ function changeNumLikes() {
     let numLikesSection = document.getElementById('numLikes');
     numLikes++;
     numLikesSection.textContent = numLikes;
+
 }
 
 getQuote();
