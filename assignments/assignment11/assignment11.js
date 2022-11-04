@@ -5,7 +5,7 @@ const likeButton = document.querySelector('.like');
 likeButton.addEventListener('click', changeNumLikes);
 let numLikes = 0;
 
-const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
+const endpoint = 'https://geek-jokes.sameerkumar.website/api';
 
 async function getQuote() {
     console.log("test button click");
@@ -14,7 +14,7 @@ async function getQuote() {
 
     let json = JSON.parse(response);
 
-    displayQuote(json['quote']);
+    displayQuote(json);
     // displayQuote(json['author']);
 }
 
