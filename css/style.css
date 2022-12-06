@@ -232,6 +232,41 @@ nav {
     padding-top: 200px;
 }
 
+#gamingPosters {
+    width: 300px;
+    display: flex;
+    padding: 10px;
+}
+
+#gamingGraphics {
+    width: 300px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#kft {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #505050;
+    text-align: center;
+    padding: 0px 50px;
+    width: 100%;
+}
+
+#staffPicks {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+
+
 
 .indexContainer {
     display: flex;
@@ -249,6 +284,13 @@ nav {
 
 .aboutMeContainer {
     display: flex;
+    align-items: center;
+    padding: 200px 30px;
+}
+
+.extrasContainer {
+    display: flex;
+    flex-flow: column;
     align-items: center;
     padding: 200px 30px;
 }
@@ -276,11 +318,27 @@ nav {
         flex-flow: column;
     }
 
+    .extrasContainer {
+        flex-flow: column;
+    }
+
     #designPictures {
         flex-flow: column;
     }
 
     #unity {
+        flex-flow: column;
+    }
+
+    #gamingPosters {
+        flex-flow: column;
+    }
+
+    #gamingGraphics {
+        flex-flow: column;
+    }
+
+    #staffPicks {
         flex-flow: column;
     }
 
