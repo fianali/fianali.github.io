@@ -8,7 +8,7 @@ function playBlackKeyNote(blackKeyPath) {
 
 blackKeys.forEach((blackKey, i) => {
     let number = i + 1;
-    let blackKeyPath = 'keys/black keys/key' + (i + 1) + '.mp3'
+    let blackKeyPath = 'keys/black keys/blackkey' + (i + 1) + '.mp3'
     blackKey.addEventListener('click', () => playBlackKeyNote(blackKeyPath))
 });
 
@@ -19,7 +19,7 @@ function playWhiteKeyNote(whiteKeyPath) {
 
 whiteKeys.forEach((whiteKey, i) => {
     let number = i + 1;
-    let whiteKeyPath = 'keys/white keys/key' + (i + 1) + '.mp3'
+    let whiteKeyPath = 'keys/white keys/whitekey' + (i + 1) + '.mp3'
     whiteKey.addEventListener('click', () => playWhiteKeyNote(whiteKeyPath))
 });
 
