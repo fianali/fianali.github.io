@@ -2,7 +2,6 @@ const blackKeys = document.querySelectorAll('.black-key')
 const whiteKeys = document.querySelectorAll('.white-key')
 
 function playBlackKeyNote(blackKeyPath) {
-    console.log(blackKeyPath)
     new Audio(blackKeyPath).play()
 }
 
@@ -13,7 +12,6 @@ blackKeys.forEach((blackKey, i) => {
 });
 
 function playWhiteKeyNote(whiteKeyPath) {
-    console.log(whiteKeyPath)
     new Audio(whiteKeyPath).play()
 }
 
