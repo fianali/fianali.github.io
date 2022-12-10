@@ -16,6 +16,7 @@ body {
 
 .keys {
     position: relative;
+    cursor: pointer;
 }
 
 .whiteKeys {
