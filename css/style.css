@@ -86,6 +86,22 @@ ul {
     color: #7E8389;
 }
 
+button {
+    font-family: 'Gideon Roman';
+    font-size: 24px;
+    color: #505050;
+    background-color: #BF9990;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #F2CDC4;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -97,6 +113,7 @@ hr {
 
 a:link {
     color: #BF9990;
+    text-decoration: none;
 }
 
 a:hover {
@@ -173,6 +190,7 @@ nav {
 }
 
 #designPictures {
+    padding: 0 20px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -181,14 +199,7 @@ nav {
 }
 
 #gameDevProjects {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    color: #505050;
     text-align: center;
-    padding: 0px 50px;
-    width: 100%;
 }
 
 #unity {
@@ -201,14 +212,12 @@ nav {
 }
 
 #musicProjects {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    color: #505050;
     text-align: center;
-    padding: 0px 50px;
-    width: 100%;
+}
+
+#audio {
+    display: flex;
+    padding: 0 20px;
 }
 
 #aboutMePicture {
@@ -232,42 +241,37 @@ nav {
     padding-top: 200px;
 }
 
+#gaming {
+    text-align: center;
+}
+
 #gamingPosters {
     width: 300px;
     display: flex;
-    padding: 10px;
+    align-items: center;
 }
 
 #gamingGraphics {
     width: 300px;
-    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#kft {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    color: #505050;
+#form {
     text-align: center;
-    padding: 0px 50px;
-    width: 100%;
+}
+
+#kft {
+    text-align: center;
 }
 
 #staffPicks {
     width: 100%;
+    padding: 0 20px;
     display: flex;
-    padding-top: 50px;
-    flex-flow: row;
     justify-content: space-evenly;
 }
-
-
-
-
 
 .indexContainer {
     display: flex;
@@ -330,6 +334,10 @@ nav {
         flex-flow: column;
     }
 
+    #aboutMePicture {
+        width: 200px
+    }
+
     #gamingPosters {
         flex-flow: column;
     }
@@ -347,9 +355,6 @@ nav {
         height: auto;
     }
 
-    /* #gamingPicture {
-        width: 100%;
-    } */
 
     .nav_links a {
         font-size: 15px;
